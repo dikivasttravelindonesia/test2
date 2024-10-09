@@ -2,10 +2,6 @@ import { useWallet } from "@aptos-labs/wallet-adapter-react";
 // Internal Components
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Header } from "@/components/Header";
-import { WalletDetails } from "@/components/WalletDetails";
-import { NetworkInfo } from "@/components/NetworkInfo";
-import { AccountInfo } from "@/components/AccountInfo";
-import { TransferAPT } from "@/components/TransferAPT";
 import { MessageBoard } from "@/components/MessageBoard";
 import { TopBanner } from "@/components/TopBanner";
 
@@ -20,10 +16,6 @@ function App() {
         {connected ? (
           <Card>
             <CardContent className="flex flex-col gap-10 pt-6">
-              <WalletDetails />
-              <NetworkInfo />
-              <AccountInfo />
-              <TransferAPT />
               <MessageBoard />
             </CardContent>
           </Card>
